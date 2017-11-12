@@ -1,7 +1,7 @@
 #include <iostream>
-using namespace std;
+ using namespace std;
 
-int arr(const int *arr, int n)
+int arr(const int *arr,  int n)
 {
 	int sum = 0;
 	for (int i = 0;i < n;i++)
