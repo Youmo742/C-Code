@@ -71,5 +71,5 @@ int main()
 		cout << endl;
 	}
 	cout << "empty list" << endl;
-	system("pause");
+	system("pause"); 
 }
