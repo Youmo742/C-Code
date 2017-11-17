@@ -51,6 +51,24 @@ void Delete(Node * &L,int n)//删除一个指定位置的元素
 	p->link=p->link->link;
 	delete q;
 }
+void ListInsert(Node *&L,int Element)//在此位置后插入
+{
+	Node *current;
+	current=L;
+	for(int i=0;i<Element;i++)
+	{
+		if(current==NULL)
+			exit(0);
+		current=current->link;
+	}
+	Node *p=new Node;
+	if(!=p)
+		exit(0);
+	cin>>p->data;
+	p->link=current->link;
+	current->link=p;
+	
+}
 void ShowList(Node *L)//遍历链表，输出元素
 {
 	Node *p=new Node;
